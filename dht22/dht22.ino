@@ -21,6 +21,7 @@ DHT dht(DHTPIN, DHTTYPE);
 // run once
 void setup() {
   Serial.begin(9600);
+  Serial.println("Start setup");
   dht.begin();
 
   // REST API vars
